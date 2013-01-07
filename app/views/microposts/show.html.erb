@@ -1,15 +1,21 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <b>Content:</b>
-  <%= @micropost.content %>
-</p>
-
-<p>
-  <b>User:</b>
-  <%= @micropost.user_id %>
-</p>
-
-
+<h1>Detail User</h1>
+<div class="CSSTableGenerator" >
+  <table >
+    <tr>
+        <td align="center">Content</td>
+        <td align="center">User</td>
+        
+    </tr>
+   
+    <tr>
+        <td align="center"><%= @micropost.content %></td>
+        <td align="center"><%= @micropost.user_id %></td>
+        
+    </tr>
+   
+  </table>
+</div>
 <%= link_to 'Edit', edit_micropost_path(@micropost) %> |
 <%= link_to 'Back', microposts_path %>
+
+
